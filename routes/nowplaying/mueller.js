@@ -12,7 +12,11 @@ export const Mueller = [
         category: "Sci-Fi",
         ticketsAvailable: 100,
         description: "In a visually stunning sequel to the 1982 cult classic, Officer K, a new blade runner, unearths a long-buried secret that could plunge society into chaos and leads him to track down former blade runner Rick Deckard.",
-        director: "Denis Villeneuve"
+        director: "Denis Villeneuve",
+        showtimes: {
+            Friday: ["10:30 AM", "1:00 PM", "3:30 PM", "6:15 PM", "8:45 PM", "11:15 PM"],
+            Saturday: ["11:00 AM", "1:30 PM", "4:00 PM", "6:45 PM", "9:15 PM", "11:30 PM"]
+        }
     },
     {
         id: 2,
@@ -27,7 +31,11 @@ export const Mueller = [
         category: "Sci-Fi, Action",
         ticketsAvailable: 80,
         description: "In a futuristic society, Major, a cybernetic human with a mysterious past, embarks on a mission to bring down a dangerous hacker targeting people like her.",
-        director: "Rupert Sanders"
+        director: "Rupert Sanders",
+        showtimes: {
+            Friday: ["10:45 AM", "1:15 PM", "3:45 PM", "6:30 PM", "8:30 PM", "11:00 PM"],
+            Saturday: ["11:15 AM", "1:45 PM", "4:15 PM", "6:45 PM", "9:00 PM", "11:45 PM"]
+        }
     },
     {
         id: 3,
@@ -42,7 +50,11 @@ export const Mueller = [
         category: "Sci-Fi, Thriller",
         ticketsAvailable: 75,
         description: "A young programmer is selected to participate in a groundbreaking experiment to interact with a highly advanced humanoid AI, leading to a tense psychological battle of trust and survival.",
-        director: "Alex Garland"
+        director: "Alex Garland",
+        showtimes: {
+            Friday: ["10:15 AM", "12:45 PM", "3:15 PM", "5:45 PM", "8:00 PM", "10:30 PM"],
+            Saturday: ["11:30 AM", "2:00 PM", "4:30 PM", "7:00 PM", "9:30 PM", "11:45 PM"]
+        }
     },
     {
         id: 4,
@@ -57,7 +69,11 @@ export const Mueller = [
         category: "Drama, Sci-Fi",
         ticketsAvailable: 90,
         description: "In a near-future society, a lonely writer develops an unlikely relationship with an intelligent operating system designed to meet his every need, leading him to question his understanding of love and reality.",
-        director: "Spike Jonze"
+        director: "Spike Jonze",
+        showtimes: {
+            Friday: ["10:00 AM", "12:30 PM", "3:00 PM", "5:30 PM", "8:00 PM", "10:45 PM"],
+            Saturday: ["10:15 AM", "12:45 PM", "3:15 PM", "5:45 PM", "8:15 PM", "10:30 PM"]
+        }
     },
     {
         id: 5,
@@ -72,6 +88,10 @@ export const Mueller = [
         category: "Sci-Fi, Mystery",
         ticketsAvailable: 50,
         description: "During a dinner party, eight friends experience a troubling chain of reality-bending events when a comet passes overhead, revealing alternate realities that challenge their perceptions of the world.",
-        director: "James Ward Byrkit"
+        director: "James Ward Byrkit",
+        showtimes: {
+            Friday: ["10:45 AM", "1:15 PM", "3:45 PM", "6:15 PM", "8:45 PM", "11:15 PM"],
+            Saturday: ["11:30 AM", "2:00 PM", "4:30 PM", "7:00 PM", "9:30 PM", "11:45 PM"]
+        }
     }
 ];
