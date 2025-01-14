@@ -5,6 +5,7 @@ import { Mueller } from './routes/nowplaying/mueller.js';
 import { RoundRock } from './routes/nowplaying/roundrock.js';
 import { ComingSoon } from './routes/comingsoon/comingsoon.js';
 
+//Hello there
 const app = express();
 app.use(cors()); // Enables CORS for all routes
 
