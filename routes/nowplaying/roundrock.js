@@ -4,7 +4,7 @@ export const RoundRock = [
         src: [
             // "http://localhost:3000/assets/movies/bladerunner2049/bladerunner2049ryan.jpg",
             // "http://localhost:3000/assets/movies/bladerunner2049/bladerunner2049bkgrnd.jpg"
-             "https://moviesitebackend.onrender.com/assets/movies/bladerunner2049/bladerunner2049ryan.jpg",
+            "https://moviesitebackend.onrender.com/assets/movies/bladerunner2049/bladerunner2049ryan.jpg",
             "https://moviesitebackend.onrender.com/assets/movies/bladerunner2049/bladerunner2049bkgrnd.jpg"
         ],
         alt: "Blade Runner 2049",
@@ -21,8 +21,10 @@ export const RoundRock = [
     {
         id: 2,
         src: [
-            "http://localhost:3000/assets/movies/lucy/lucy.jpg",
-            "http://localhost:3000/assets/movies/lucy/lucybkgrnd.jpg"
+            // "http://localhost:3000/assets/movies/lucy/lucy.jpg",
+            // "http://localhost:3000/assets/movies/lucy/lucybkgrnd.jpg"
+            "https://moviesitebackend.onrender.com/assets/movies/lucy/lucy.jpg",
+            "https://moviesitebackend.onrender.com/assets/movies/lucy/lucybkgrnd.jpg"
         ],
         alt: "Lucy",
         title: "Lucy",
@@ -38,8 +40,10 @@ export const RoundRock = [
     {
         id: 3,
         src: [
-            "http://localhost:3000/assets/movies/exmachina/exmachina.jpg",
-            "http://localhost:3000/assets/movies/exmachina/exmachinabckgrnd.jpg"
+            // "http://localhost:3000/assets/movies/exmachina/exmachina.jpg",
+            // "http://localhost:3000/assets/movies/exmachina/exmachinabckgrnd.jpg"
+            "https://moviesitebackend.onrender.com/assets/movies/exmachina/exmachina.jpg",
+            "https://moviesitebackend.onrender.com/assets/movies/exmachina/exmachinabckgrnd.jpg"
         ],
         alt: "Ex Machina",
         title: "Ex Machina",
@@ -55,8 +59,10 @@ export const RoundRock = [
     {
         id: 4,
         src: [
-            "http://localhost:3000/assets/movies/matrix/matrix.jpg",
-            "http://localhost:3000/assets/movies/matrix/matrixbckgrnd.jpg"
+            // "http://localhost:3000/assets/movies/matrix/matrix.jpg",
+            // "http://localhost:3000/assets/movies/matrix/matrixbckgrnd.jpg"
+            "https://moviesitebackend.onrender.com/assets/movies/matrix/matrix.jpg",
+            "https://moviesitebackend.onrender.com/assets/movies/matrix/matrixbckgrnd.jpg"
         ],
         alt: "The Matrix",
         title: "The Matrix",
@@ -72,8 +78,10 @@ export const RoundRock = [
     {
         id: 5,
         src: [
-            "http://localhost:3000/assets/movies/coherance/coherance.jpg",
-            "http://localhost:3000/assets/movies/coherance/coherancebckgrnd.jpg"
+            // "http://localhost:3000/assets/movies/coherance/coherance.jpg",
+            // "http://localhost:3000/assets/movies/coherance/coherancebckgrnd.jpg"
+            "https://moviesitebackend.onrender.com/assets/movies/coherance/coherance.jpg",
+            "https://moviesitebackend.onrender.com/assets/movies/coherance/coherancebckgrnd.jpg"
         ],
         alt: "Coherence",
         title: "Coherence",
