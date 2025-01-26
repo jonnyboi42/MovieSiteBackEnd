@@ -4,8 +4,8 @@ export const RoundRock = [
         src: [
             // "http://localhost:3000/assets/movies/bladerunner2049/bladerunner2049ryan.jpg",
             // "http://localhost:3000/assets/movies/bladerunner2049/bladerunner2049bkgrnd.jpg"
-             "https://your-backend-service.onrender.com/assets/movies/bladerunner2049/bladerunner2049ryan.jpg",
-            "https://your-backend-service.onrender.com/assets/movies/bladerunner2049/bladerunner2049bkgrnd.jpg"
+             "https://moviesitebackend.onrender.com/assets/movies/bladerunner2049/bladerunner2049ryan.jpg",
+            "https://moviesitebackend.onrender.com/assets/movies/bladerunner2049/bladerunner2049bkgrnd.jpg"
         ],
         alt: "Blade Runner 2049",
         title: "Blade Runner 2049",
