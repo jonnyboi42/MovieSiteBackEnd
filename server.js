@@ -1,13 +1,22 @@
 import express from 'express';
 import cors from 'cors';
 import path from 'path';
+
+//Necessary Imports for Movie Data
 import { Mueller } from './routes/nowplaying/mueller.js';
 import { RoundRock } from './routes/nowplaying/roundrock.js';
 import { ComingSoon } from './routes/comingsoon/comingsoon.js';
 
-//Hello there
+// Imports for Redeeming Vouchers & Checkinng out / Purchasing Tickets
+import vouchersRoutes from './routes/vouchers/vouchers.js'
+import checkoutRoutes from './routes/checkoutinfo/checkoutinfo.js'
+
+
 const app = express();
 app.use(cors()); // Enables CORS for all routes
+
+// Use express.json() middleware to parse JSON bodies
+app.use(express.json());  // Add this line
 
 // Serve static files from the 'public' directory (adjust if your images are elsewhere)
 app.use('/assets', express.static(path.join(process.cwd(), 'src/assets')));
@@ -56,7 +65,11 @@ app.get('/:location/movie/:id', (req, res) => {
     res.json(movie);
 });
 
+// Mount the vouchers route under /api/vouchers
+app.use('/api/vouchers', vouchersRoutes);
 
+// Mount the vouchers route under /api/vouchers
+app.use('/api/checkoutinfo', checkoutRoutes);
 
 // Start the server
 app.listen(3000, () => {
