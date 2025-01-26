@@ -1,92 +1,102 @@
-export const ComingSoon = [
+export const Mueller = [
     {
         id: 1,
         src: [
-            // "http://localhost:3000/assets/movies/megalopolis/megalopolis.webp",
-            // "http://localhost:3000/assets/movies/megalopolis/megalopolisbckgrnd.jpg"
+            // "http://localhost:3000/assets/movies/bladerunner2049/bladerunner2049ryan.jpg",
+            // "http://localhost:3000/assets/movies/bladerunner2049/bladerunner2049bkgrnd.jpg"
 
-            "https://moviesitebackend.onrender.com/assets/movies/megalopolis/megalopolis.webp",
-            "https://moviesitebackend.onrender.com/assets/movies/megalopolis/megalopolisbckgrnd.jpg"
+            "https://moviesitebackend.onrender.com/assets/movies/bladerunner2049/bladerunner2049ryan.jpg",
+            "https://moviesitebackend.onrender.com/assets/movies/bladerunner2049/bladerunner2049bkgrnd.jpg"
         ],
-        alt: "Megalopolis",
-        title: "Megalopolis",
-        runtime: "1h 23m",
-        releaseDate: "1995-11-18",
-        category: "Sci-Fi, Drama",
-        ticketsAvailable: 150,
-        description: "In a sprawling futuristic city, a visionary architect fights to rebuild society after a cataclysmic disaster, facing political resistance and personal turmoil.",
-        director: "Francis Ford Coppola"
+        alt: "Blade Runner 2049",
+        title: "Blade Runner 2049",
+        runtime: "2h 44m",
+        releaseDate: "2017-10-06",
+        category: "Sci-Fi",
+        ticketsAvailable: 100,
+        ticketPrice: 12.99,
+        description: "In a visually stunning sequel to the 1982 cult classic, Officer K, a new blade runner, unearths a long-buried secret that could plunge society into chaos and leads him to track down former blade runner Rick Deckard.",
+        director: "Denis Villeneuve",
+        showtimes: ["10:30 AM", "1:00 PM", "3:30 PM", "6:15 PM", "8:45 PM", "11:15 PM"]
     },
     {
         id: 2,
         src: [
-            // "http://localhost:3000/assets/movies/hereditary/hereditary.webp",
-            // "http://localhost:3000/assets/movies/hereditary/hereditarybckgrnd.jpg"
-
-            "https://moviesitebackend.onrender.com/assets/movies/hereditary/hereditary.webp",
-            "https://moviesitebackend.onrender.com/assets/movies/hereditary/hereditarybckgrnd.jpg"
+            // "http://localhost:3000/assets/movies/ghostinshell/ghostinshell.jpg",
+            // "http://localhost:3000/assets/movies/ghostinshell/ghostinshellbckgrnd.webp"
+            
+            "https://moviesitebackend.onrender.com/assets/movies/ghostinshell/ghostinshell.jpg",
+            "https://moviesitebackend.onrender.com/assets/movies/ghostinshell/ghostinshellbckgrnd.webp"
         ],
-        alt: "Hereditary",
-        title: "Hereditary",
-        runtime: "2h 44m",
-        releaseDate: "2017-10-06",
-        category: "Horror, Thriller",
-        ticketsAvailable: 100,
-        description: "A family unravels horrifying secrets about their ancestry when a series of tragic and disturbing events begin to unfold after the death of their matriarch.",
-        director: "Ari Aster"
+        alt: "Ghost in the Shell",
+        title: "Ghost in the Shell",
+        runtime: "2h 11m",
+        releaseDate: "2017-05-25",
+        category: "Sci-Fi, Action",
+        ticketsAvailable: 80,
+        ticketPrice: 11.99,
+        description: "In a futuristic society, Major, a cybernetic human with a mysterious past, embarks on a mission to bring down a dangerous hacker targeting people like her.",
+        director: "Rupert Sanders",
+        showtimes: ["10:45 AM", "1:15 PM", "3:45 PM", "6:30 PM", "8:30 PM", "11:00 PM", "12:15 PM"]
     },
     {
         id: 3,
         src: [
-            // "http://localhost:3000/assets/movies/country/country.jpg",
-            // "http://localhost:3000/assets/movies/country/nocountrybckgrnd.jpg"
-
-            "https://moviesitebackend.onrender.com/assets/movies/country/country.jpg",
-            "https://moviesitebackend.onrender.com/assets/movies/country/nocountrybckgrnd.jpg"
+            // "http://localhost:3000/assets/movies/exmachina/exmachina.jpg",
+            // "http://localhost:3000/assets/movies/exmachina/exmachinabckgrnd.jpg"
+            
+            "https://moviesitebackend.onrender.com/assets/movies/exmachina/exmachina.jpg",
+            "https://moviesitebackend.onrender.com/assets/movies/exmachina/exmachinabckgrnd.jpg"
         ],
-        alt: "Country",
-        title: "Country",
-        runtime: "2h 11m",
-        releaseDate: "2017-05-25",
-        category: "Drama, Mystery",
-        ticketsAvailable: 90,
-        description: "A small-town community is shaken when a young girl goes missing, unraveling long-buried secrets and testing the bonds between neighbors and family.",
-        director: "Michele Tuscano"
+        alt: "Ex Machina",
+        title: "Ex Machina",
+        runtime: "2h 20m",
+        releaseDate: "2005-05-19",
+        category: "Sci-Fi, Thriller",
+        ticketsAvailable: 75,
+        ticketPrice: 10.99,
+        description: "A young programmer is selected to participate in a groundbreaking experiment to interact with a highly advanced humanoid AI, leading to a tense psychological battle of trust and survival.",
+        director: "Alex Garland",
+        showtimes: ["10:15 AM", "12:45 PM", "3:15 PM", "5:45 PM", "8:00 PM", "10:30 PM"]
     },
     {
         id: 4,
         src: [
-            // "http://localhost:3000/assets/movies/quietplace/quiet.jpg",
-            // "http://localhost:3000/assets/movies/quietplace/quietplacebckgrnd.jpeg"
-
-            "https://moviesitebackend.onrender.com/assets/movies/quietplace/quiet.jpg",
-            "https://moviesitebackend.onrender.com/assets/movies/quietplace/quietplacebckgrnd.jpeg"
+            // "http://localhost:3000/assets/movies/her/her.jpg",
+            // "http://localhost:3000/assets/movies/her/herbckgrnd.jpg"
+            
+            "https://moviesitebackend.onrender.com/assets/movies/her/her.jpg",
+            "https://moviesitebackend.onrender.com/assets/movies/her/herbckgrnd.jpg"
         ],
-        alt: "A Quiet Place",
-        title: "A Quiet Place",
-        runtime: "2h 11m",
-        releaseDate: "2017-05-25",
-        category: "Horror, Thriller",
-        ticketsAvailable: 120,
-        description: "In a world overrun by deadly creatures with acute hearing, a family struggles to survive in silence, creating an isolated haven while grappling with their past.",
-        director: "John Krasinski"
+        alt: "Her",
+        title: "Her",
+        runtime: "2h 16m",
+        releaseDate: "2013-11-20",
+        category: "Drama, Sci-Fi",
+        ticketsAvailable: 90,
+        ticketPrice: 13.49,
+        description: "In a near-future society, a lonely writer develops an unlikely relationship with an intelligent operating system designed to meet his every need, leading him to question his understanding of love and reality.",
+        director: "Spike Jonze",
+        showtimes: ["10:00 AM", "12:30 PM", "3:00 PM", "5:30 PM", "8:00 PM", "10:45 PM"]
     },
     {
         id: 5,
         src: [
-            // "http://localhost:3000/assets/movies/spaceodyssey/space.jpg",
-            // "http://localhost:3000/assets/movies/spaceodyssey/spaceodysseybckgrnd.jpg"
-
-            "https://moviesitebackend.onrender.com/assets/movies/spaceodyssey/space.jpg",
-            "https://moviesitebackend.onrender.com/assets/movies/spaceodyssey/spaceodysseybckgrnd.jpg"
+            // "http://localhost:3000/assets/movies/coherance/coherance.jpg",
+            // "http://localhost:3000/assets/movies/coherance/coherancebckgrnd.jpg"
+            
+            "https://moviesitebackend.onrender.com/assets/movies/coherance/coherance.jpg",
+            "https://moviesitebackend.onrender.com/assets/movies/coherance/coherancebckgrnd.jpg"
         ],
-        alt: "Space Odyssey",
-        title: "A Space Odyssey",
-        runtime: "2h 11m",
-        releaseDate: "2017-05-25",
-        category: "Sci-Fi, Adventure",
-        ticketsAvailable: 200,
-        description: "A journey through space and time leads humanity to confront the mysteries of the universe in this epic tale of exploration and evolution.",
-        director: "Stanley Kubrick"
+        alt: "Coherence",
+        title: "Coherence",
+        runtime: "2h 9m",
+        releaseDate: "2003-11-05",
+        category: "Sci-Fi, Mystery",
+        ticketsAvailable: 50,
+        ticketPrice: 9.99,
+        description: "During a dinner party, eight friends experience a troubling chain of reality-bending events when a comet passes overhead, revealing alternate realities that challenge their perceptions of the world.",
+        director: "James Ward Byrkit",
+        showtimes: ["10:45 AM", "1:15 PM", "3:45 PM", "6:15 PM", "8:45 PM", "11:15 PM"]
     }
 ];
