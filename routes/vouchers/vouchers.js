@@ -7,9 +7,13 @@ dotenv.config();
 
 const router = express.Router();
 
-// Create a pool instance to connect to the PostgreSQL database using connection string
+// Create a pool instance to connect to the PostgreSQL database
 const pool = new Pool({
-  connectionString: `postgres://${process.env.DB_USER}:${process.env.DB_PASSWORD}@${process.env.DB_HOST}:${process.env.DB_PORT}/${process.env.DB_NAME}`,
+  host: process.env.DB_HOST,
+  port: process.env.DB_PORT,
+  user: process.env.DB_USER,
+  password: process.env.DB_PASSWORD,
+  database: process.env.DB_NAME,
 });
 
 // Get all vouchers (optional, if you need this route)
