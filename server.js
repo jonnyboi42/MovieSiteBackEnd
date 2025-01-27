@@ -16,7 +16,7 @@ const app = express();
 //app.use(cors()); // Enables CORS for all routes
 
 app.use(cors({
-    origin: 'http://localhost:5173', // Allow requests from your front-end URL
+    origin: 'https://moviesitefrontend.onrender.com', // Allow requests from your front-end URL
     methods: 'GET, POST, PUT, DELETE', // Allow all common HTTP methods
     allowedHeaders: 'Content-Type, Authorization', // Allow necessary headers
     credentials: true, // If you are sending cookies or authentication tokens
