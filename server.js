@@ -13,7 +13,14 @@ import checkoutRoutes from './routes/checkoutinfo/checkoutinfo.js'
 
 
 const app = express();
-app.use(cors()); // Enables CORS for all routes
+//app.use(cors()); // Enables CORS for all routes
+
+app.use(cors({
+    origin: 'http://localhost:5173', // Allow requests from your front-end URL
+    methods: 'GET, POST, PUT, DELETE', // Allow all common HTTP methods
+    allowedHeaders: 'Content-Type, Authorization', // Allow necessary headers
+    credentials: true, // If you are sending cookies or authentication tokens
+}));
 
 // Use express.json() middleware to parse JSON bodies
 app.use(express.json());  // Add this line
