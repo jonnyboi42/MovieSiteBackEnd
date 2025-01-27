@@ -22,6 +22,7 @@ router.get('/', async (req, res) => {
     const result = await pool.query('SELECT * FROM vouchers');
     res.json(result.rows);
   } catch (error) {
+    console.error("Error checking voucher:", error.message);
     console.log('Error Fetching Vouchers Database:', error);
     res.status(500).send('Error retrieving vouchers');
   }
