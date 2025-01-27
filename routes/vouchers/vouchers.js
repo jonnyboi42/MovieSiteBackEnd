@@ -53,7 +53,7 @@ router.post('/checkVoucher', async (req, res) => {
     }
 
     // Parse the discount amount as a number
-    const discount = parseFloat(voucher.amount);
+    const discount = parseFloat(voucher.discount);
     if (isNaN(discount) || discount <= 0) {
       return res.status(400).json({ error: "Invalid discount value in database" });
     }
