@@ -28,14 +28,13 @@ router.get('/', async (req, res) => {
   }
 });
 
-// Check voucher validity (post route for voucher code)
 router.post('/checkVoucher', async (req, res) => {
   const { voucherCode } = req.body;
 
   try {
     // Query the database to check if the voucher exists
     const result = await pool.query('SELECT * FROM vouchers WHERE voucher_code = $1', [voucherCode]);
-    
+
     if (result.rows.length === 0) {
       return res.status(404).json({ error: "Voucher not found" });
     }
@@ -53,14 +52,22 @@ router.post('/checkVoucher', async (req, res) => {
       return res.status(400).json({ error: "Voucher expired" });
     }
 
+    // Parse the discount amount as a number
+    const discount = parseFloat(voucher.amount);
+    if (isNaN(discount) || discount <= 0) {
+      return res.status(400).json({ error: "Invalid discount value in database" });
+    }
+
     // If voucher is valid, mark it as redeemed
     await pool.query('UPDATE vouchers SET redeemed = $1 WHERE voucher_code = $2', [true, voucherCode]);
 
-    return res.status(200).json({ discount: voucher.amount });
+    console.log("Voucher successfully redeemed. Discount:", discount);
+    return res.status(200).json({ discount });
   } catch (error) {
     console.error("Error checking voucher:", error);
     return res.status(500).json({ error: "Internal server error" });
   }
 });
+
 
 export default router;
