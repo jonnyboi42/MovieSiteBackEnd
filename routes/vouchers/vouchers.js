@@ -34,7 +34,7 @@ router.post('/checkVoucher', async (req, res) => {
 
   try {
     // Query the database to check if the voucher exists
-    const result = await pool.query('SELECT * FROM vouchers WHERE vouchercode = $1', [voucherCode]);
+    const result = await pool.query('SELECT * FROM vouchers WHERE voucher_code = $1', [voucherCode]);
     
     if (result.rows.length === 0) {
       return res.status(404).json({ error: "Voucher not found" });
@@ -54,7 +54,7 @@ router.post('/checkVoucher', async (req, res) => {
     }
 
     // If voucher is valid, mark it as redeemed
-    await pool.query('UPDATE vouchers SET redeemed = $1 WHERE vouchercode = $2', [true, voucherCode]);
+    await pool.query('UPDATE vouchers SET redeemed = $1 WHERE voucher_code = $2', [true, voucherCode]);
 
     return res.status(200).json({ discount: voucher.amount });
   } catch (error) {
