@@ -83,7 +83,7 @@ app.get('/:category/:location/movie/:id', (req, res) => {
     }
 
     // Check if the category is 'playingsoon' (now playing)
-    if (category.toLowerCase() === 'playingsoon') {
+    if (category.toLowerCase() === 'nowplaying') {
         if (location.toLowerCase() === 'roundrock') {
             const movie = RoundRock.find((m) => m.id === parseInt(id));
             if (!movie) {
