@@ -1,9 +1,9 @@
-export const ComingSoon = [
+export const ComingSoonRoundRock = [
     {
         id: 1,
         src: [
-            "https://your-backend-service.onrender.com/assets/movies/bladerunner2049/bladerunner2049ryan.jpg",
-            "https://your-backend-service.onrender.com/assets/movies/bladerunner2049/bladerunner2049bkgrnd.jpg"
+            "https://moviesitebackend.onrender.com/assets/movies/megalopolis/megalopolis.webp",
+            "https://moviesitebackend.onrender.com/assets/movies/megalopolis/megalopolisbckgrnd.jpg"
         ],
         alt: "Megalopolis",
         title: "Megalopolis",
@@ -17,8 +17,8 @@ export const ComingSoon = [
     {
         id: 2,
         src: [
-            "http://localhost:3000/assets/movies/hereditary/hereditary.webp",
-            "http://localhost:3000/assets/movies/hereditary/hereditarybckgrnd.jpg"
+            "https://moviesitebackend.onrender.com/assets/movies/hereditary/hereditary.webp",
+            "https://moviesitebackend.onrender.com/assets/movies/hereditary/hereditarybckgrnd.jpg"
         ],
         alt: "Hereditary",
         title: "Hereditary",
@@ -32,8 +32,8 @@ export const ComingSoon = [
     {
         id: 3,
         src: [
-            "http://localhost:3000/assets/movies/country/country.jpg",
-            "http://localhost:3000/assets/movies/country/nocountrybckgrnd.jpg"
+            "https://moviesitebackend.onrender.com/assets/movies/country/country.jpg",
+            "https://moviesitebackend.onrender.com/assets/movies/country/nocountrybckgrnd.jpg"
         ],
         alt: "Country",
         title: "Country",
@@ -47,8 +47,8 @@ export const ComingSoon = [
     {
         id: 4,
         src: [
-            "http://localhost:3000/assets/movies/quietplace/quiet.jpg",
-            "http://localhost:3000/assets/movies/quietplace/quietplacebckgrnd.jpeg"
+            "https://moviesitebackend.onrender.com/assets/movies/quietplace/quiet.jpg",
+            "https://moviesitebackend.onrender.com/assets/movies/quietplace/quietplacebckgrnd.jpeg"
         ],
         alt: "A Quiet Place",
         title: "A Quiet Place",
@@ -62,8 +62,8 @@ export const ComingSoon = [
     {
         id: 5,
         src: [
-            "http://localhost:3000/assets/movies/spaceodyssey/space.jpg",
-            "http://localhost:3000/assets/movies/spaceodyssey/spaceodysseybckgrnd.jpg"
+            "https://moviesitebackend.onrender.com/assets/movies/spaceodyssey/space.jpg",
+            "https://moviesitebackend.onrender.com/assets/movies/spaceodyssey/spaceodysseybckgrnd.jpg"
         ],
         alt: "Space Odyssey",
         title: "A Space Odyssey",
