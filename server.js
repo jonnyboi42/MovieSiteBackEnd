@@ -60,15 +60,25 @@ const locations = {
 };
 
 // Dynamic route to fetch a specific movie by location and ID
-app.get('/:location/movie/:id', (req, res) => {
-    const { location, id } = req.params;
+app.get('/:category/:location/movie/:id', (req, res) => {
+    const { category, location, id } = req.params;
 
-    if (location.toLowerCase() === 'comingsoon') {
-        const movie = ComingSoon.find((m) => m.id === parseInt(id));
-        if (!movie) {
-            return res.status(404).json({ error: `Movie with ID '${id}' not found in 'Coming Soon'.` });
+    if (category.toLowerCase() === 'comingsoon') {
+        if (location.toLowerCase() === 'roundrock') {
+            const movie = ComingSoonRoundRock.find((m) => m.id === parseInt(id));
+            if (!movie) {
+                return res.status(404).json({ error: `Movie with ID '${id}' not found in 'Coming Soon' at RoundRock.` });
+            }
+            return res.json(movie);
         }
-        return res.json(movie);
+        if (location.toLowerCase() === 'mueller') {
+            const movie = ComingSoonMueller.find((m) => m.id === parseInt(id));
+            if (!movie) {
+                return res.status(404).json({ error: `Movie with ID '${id}' not found in 'Coming Soon' at Mueller.` });
+            }
+            return res.json(movie);
+        }
+        return res.status(404).json({ error: `Location '${location}' not found for 'Coming Soon' movies.` });
     }
 
     const movies = locations[location.toLowerCase()];
@@ -83,6 +93,7 @@ app.get('/:location/movie/:id', (req, res) => {
 
     res.json(movie);
 });
+
 
 // Mount the vouchers route under /api/vouchers
 app.use('/api/vouchers', vouchersRoutes);
