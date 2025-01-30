@@ -6,6 +6,8 @@ import path from 'path';
 import { Mueller } from './routes/nowplaying/mueller.js';
 import { RoundRock } from './routes/nowplaying/roundrock.js';
 import { ComingSoon } from './routes/comingsoon/comingsoon.js';
+import { ComingSoonRoundRock } from './routes/comingsoon/comingsoonroundrock.js'
+import { ComingSoonMueller} from './routes/comingsoon/comingsoonmueller.js'
 
 // Imports for Redeeming Vouchers & Checkinng out / Purchasing Tickets
 import vouchersRoutes from './routes/vouchers/vouchers.js'
@@ -40,6 +42,16 @@ app.get('/Roundrock', (req, res) => {
 app.get('/comingsoon', (req, res) => {
     res.json(ComingSoon);
 });
+
+app.get('/comingsoonroundrock', (req,res) => {
+    res.json(ComingSoonRoundRock);
+});
+
+app.get('/comingsoonmueller', (req,res) => {
+    res.json(ComingSoonMueller);
+});
+
+
 
 // Map locations to their respective datasets
 const locations = {
