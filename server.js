@@ -59,48 +59,18 @@ const locations = {
     roundrock: RoundRock
 };
 
-app.get('/:category/:location/movie/:id', (req, res) => {
-    const { category, location, id } = req.params;
+// Dynamic route to fetch a specific movie by location and ID
+app.get('/:location/movie/:id', (req, res) => {
+    const { location, id } = req.params;
 
-    if (category.toLowerCase() === 'comingsoon') {
-        // Handle comingsoon category
-        if (location.toLowerCase() === 'roundrock') {
-            const movie = ComingSoonRoundRock.find((m) => m.id === parseInt(id));
-            if (!movie) {
-                return res.status(404).json({ error: `Movie with ID '${id}' not found in 'Coming Soon' at RoundRock.` });
-            }
-            return res.json(movie);
+    if (location.toLowerCase() === 'comingsoon') {
+        const movie = ComingSoon.find((m) => m.id === parseInt(id));
+        if (!movie) {
+            return res.status(404).json({ error: `Movie with ID '${id}' not found in 'Coming Soon'.` });
         }
-        if (location.toLowerCase() === 'mueller') {
-            const movie = ComingSoonMueller.find((m) => m.id === parseInt(id));
-            if (!movie) {
-                return res.status(404).json({ error: `Movie with ID '${id}' not found in 'Coming Soon' at Mueller.` });
-            }
-            return res.json(movie);
-        }
-        return res.status(404).json({ error: `Location '${location}' not found for 'Coming Soon' movies.` });
+        return res.json(movie);
     }
 
-    if (category.toLowerCase() === 'playingsoon') {
-        // Handle playingsoon category
-        if (location.toLowerCase() === 'roundrock') {
-            const movie = RoundRock.find((m) => m.id === parseInt(id));
-            if (!movie) {
-                return res.status(404).json({ error: `Movie with ID '${id}' not found in 'Playing Soon' at RoundRock.` });
-            }
-            return res.json(movie);
-        }
-        if (location.toLowerCase() === 'mueller') {
-            const movie = Mueller.find((m) => m.id === parseInt(id));
-            if (!movie) {
-                return res.status(404).json({ error: `Movie with ID '${id}' not found in 'Playing Soon' at Mueller.` });
-            }
-            return res.json(movie);
-        }
-        return res.status(404).json({ error: `Location '${location}' not found for 'Playing Soon' movies.` });
-    }
-
-    // If neither comingsoon nor playingsoon
     const movies = locations[location.toLowerCase()];
     if (!movies) {
         return res.status(404).json({ error: `Location '${location}' not found.` });
@@ -113,7 +83,6 @@ app.get('/:category/:location/movie/:id', (req, res) => {
 
     res.json(movie);
 });
-
 
 // Mount the vouchers route under /api/vouchers
 app.use('/api/vouchers', vouchersRoutes);
