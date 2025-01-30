@@ -33,7 +33,7 @@ export const ComingSoonMueller = [
         id: 3,
         src: [
             "https://moviesitebackend.onrender.com/assets/movies/anora/anora.jpg",
-            "https://moviesitebackend.onrender.com/assets/movies/anora/anorabackgrnd.jpg"
+            "https://moviesitebackend.onrender.com/assets/movies/anora/anorabckgrnd.jpg"
         ],
         alt: "Anora",
         title: "Anora",
